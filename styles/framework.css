@@ -1277,7 +1277,7 @@ input[type="range"]::-webkit-slider-thumb:after{
 }
 
 .link-list a{
-	padding-left:40px;
+	padding-left:0px;
 	line-height:52px;
 	font-size:14px;
 	font-weight:500;

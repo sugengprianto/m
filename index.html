@@ -11,6 +11,22 @@
 	<link
 		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
 		rel="stylesheet">
+	<style>
+		#myTable th,
+		#myTable td {
+			text-align: left;
+			padding: 10px;
+		}
+
+		#myTable tr.header,
+		#myTable tr:hover {
+			background-color: #f1f1f1;
+		}
+
+		#myTable td {
+			border-collapse: collapse;
+		}
+	</style>
 </head>
 <!-- body -->
 <body>
@@ -108,42 +124,42 @@
 					</div>
 					<!-- pencarian -->
 					<table id="myTable">
-                <tr>
-                  <th style="width:20%;">ID</th>
-                  <th style="width:80%;">Terjemah</th>
-                </tr>
-                <tr>
-                  <td>Al Fatihah 1</td>
-                  <td>Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.</td>
-                </tr>
-                <tr>
-                  <td>Al Fatihah 2</td>
-                  <td>Segala puji bagi Allah, Tuhan semesta alam</td>
-                </tr>
-                <tr>
-                  <td> Al Fatihah 3</td>
-                  <td>Yang Maha Pengasih lagi Maha Penyayang,</td>
-                </tr>
-                <tr>
-                  <td>Al Fatihah 4</td>
-                  <td>Pemilik hari Pembalasan.</td>
-                </tr>
-                <tr>
-                  <td>Al Fatihah 5</td>
-                  <td>Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami memohon pertolongan.</td>
-                </tr>
-                <tr>
-                  <td>Al Fatihah 6</td>
-                  <td>Bimbinglah kami ke jalan yang lurus,</td>
-                </tr>
-                <tr>
-                  <td>Al Fatihah 7</td>
-                  <td>(yaitu) jalan orang-orang yang telah Engkau beri nikmat, bukan (jalan) mereka yang dimurkai dan
-                    bukan (pula jalan) orang-orang yang sesat.</td>
-                </tr>
-
-              </table>
-					
+						<tr>
+							<th style="width:20%;">ID</th>
+							<th style="width:80%;">Terjemah</th>
+						</tr>
+						<tr>
+							<td>Al Fatihah 1</td>
+							<td>Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.</td>
+						</tr>
+						<tr>
+							<td>Al Fatihah 2</td>
+							<td>Segala puji bagi Allah, Tuhan semesta alam</td>
+						</tr>
+						<tr>
+							<td> Al Fatihah 3</td>
+							<td>Yang Maha Pengasih lagi Maha Penyayang,</td>
+						</tr>
+						<tr>
+							<td>Al Fatihah 4</td>
+							<td>Pemilik hari Pembalasan.</td>
+						</tr>
+						<tr>
+							<td>Al Fatihah 5</td>
+							<td>Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami memohon
+								pertolongan.</td>
+						</tr>
+						<tr>
+							<td>Al Fatihah 6</td>
+							<td>Bimbinglah kami ke jalan yang lurus,</td>
+						</tr>
+						<tr>
+							<td>Al Fatihah 7</td>
+							<td>(yaitu) jalan orang-orang yang telah Engkau beri nikmat, bukan (jalan) mereka yang
+								dimurkai dan
+								bukan (pula jalan) orang-orang yang sesat.</td>
+						</tr>
+					</table>
 					<!-- /pencarian -->
 				</div>
 			</div>
@@ -267,13 +283,34 @@
 			</div>
 			<div class="footer footer-dark">
 				<div class="footer-socials">
-					<a href="https://api.netlify.com/api/v1/badges/6c0f9aec-bed1-4eef-be03-c7b622caae78/deploy-status"></a>
+					<a
+						href="https://api.netlify.com/api/v1/badges/6c0f9aec-bed1-4eef-be03-c7b622caae78/deploy-status"></a>
 				</div>
 				<p class="footer-copyright">&copy;<span class="copyright-year"></span> - Masyarakat</p>
 			</div>
 		</div>
 		<a href="#" class="back-to-top-badge back-to-top-small bg-highlight"><i class="fa fa-angle-up"></i>Ke Atas</a>
 	</div>
+	<script>
+		function myFunction() {
+			var input, filter, table, tr, td, i, txtValue;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) {
+					txtValue = td.textContent || td.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+		}
+	</script>
 	<script type="text/javascript" src="scripts/jquery.js"></script>
 	<script type="text/javascript" src="scripts/plugins.js"></script>
 	<script type="text/javascript" src="scripts/custom.js"></script>

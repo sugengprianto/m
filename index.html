@@ -3,10 +3,25 @@
 <!-- head -->
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html" />
-	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 	<title>Selamat datang di Masyarakat</title>
+	<style>
+		#myTable th,
+		#myTable td {
+			text-align: left;
+			padding: 10px;
+		}
+
+		#myTable tr.header,
+		#myTable tr:hover {
+			background-color: #f1f1f1;
+		}
+
+		#myTable td {
+			border-collapse: collapse;
+		}
+	</style>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/framework.css">
@@ -17,7 +32,7 @@
 <!-- body -->
 
 <body>
-	<div id="page-transitions" class="page-build highlight-red">
+	<div id="page-transitions" class="page-build bg-highlight">
 		<div class="header header-light header-static header-logo-app hide-header-card">
 			<a href="index.html" class="header-title font-12">MASYARAKAT</a>
 			<a data-menu="menu-2" href="#" class="header-icon header-icon-1"><i class="fa fa-cog"></i></a>
@@ -26,14 +41,25 @@
 		<div id="menu-1" class="menu-sidebar menu-dark menu-sidebar-right menu-sidebar-reveal">
 			<div class="menu-scroll">
 				<div class="sidebar-icons">
-					<a href="https://t.me/hidrometer"><i class="font-12 fa-fw fab fa-telegram"></i></a>
-					<a href="https://wa.me/62818842400"><i class="font-12 fa-fw fab fa-whatsapp"></i></a>
-					<a href="https://m.me/hidrometer"><i class="font-12 fa-fw fab fa-facebook-messenger"></i></a>
-					<a href="mailto:hidrometer@gmail.com"><i class="font-12 fa-fw fa fa-envelope"></i></a>
-					<a href="#" class="close-menu"><i class="font-12 fa-fw fa fa-times"></i></a>
+					<a href="#"><i class="font-10 fa-fw fab fa-facebook-f"></i></a>
+					<a href="#"><i class="font-10 fa-fw fab fa-twitter"></i></a>
+					<a href="tel:+1 234 567 890"><i class="font-10 fa-fw fa fa-phone"></i></a>
+					<a href="mailto:yourname@domain.com"><i class="font-11 fa-fw far fa-envelope"></i></a>
+					<a href="#" class="close-menu"><i class="font-10 fa-fw fa fa-times"></i></a>
+				</div>
 				<div class="sidebar-separator">Menu</div>
 				<div class="menu-items menu-icons">
-					<a href="index.html"><i class="fa fa-home"></i>Beranda</a>
+					<a href="#"><i class="fa fa-home"></i>Beranda</a>
+					<a href="#"><i class="fas fa-heart"></i>AppStyled</a>
+					<a href="#"><i class="fas fa-shopping-bag"></i>Templates</a>
+					<a href="#"><i class="fas fa-camera"></i>Media</a>
+				</div>
+				<div class="sidebar-divider"></div>
+				<div class="sidebar-separator">Hubungi Kami</div>
+				<div class="menu-items menu-icons">
+					<a href="tel:+1 234 567 890"><em><i class="fab fa-whatsapp"></i>WhatsApp</em></a>
+					<a href="sms:+1 234 567 890"><em><i class="fab fa-telegram"></i>Telegram</em></a>
+					<a href="mailto:yourname@domain.com"><em><i class="fa fa-envelope"></i>Email</em></a>
 				</div>
 				<div class="sidebar-divider"></div>
 				<p class="sidebar-copyright">&copy;<span class="copyright-year"></span> - Masyarakat</p>
@@ -42,31 +68,47 @@
 		<div id="menu-2" class="menu-sidebar menu-dark menu-sidebar-left menu-sidebar-reveal">
 			<div class="menu-scroll">
 				<div class="sidebar-icons">
-					<a href="mailto:hidrometer@gmail.com"><i class="font-12 fa-fw fa fa-envelope"></i></a>
-					<a href="https://m.me/hidrometer"><i class="font-12 fa-fw fab fa-facebook-messenger"></i></a>
-					<a href="https://wa.me/62818842400"><i class="font-12 fa-fw fab fa-whatsapp"></i></a>
-					<a href="https://t.me/hidrometer"><i class="font-12 fa-fw fab fa-telegram"></i></a>
-					<a href="#" class="close-menu"><i class="font-12 fa-fw fa fa-times"></i></a>
+					<a href="https://www.facebook.com/enabled.labs"><i class="font-10 fa-fw fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com/iEnabled"><i class="font-10 fa-fw fab fa-twitter"></i></a>
+					<a href="tel:+1 234 567 890"><i class="font-10 fa-fw fa fa-phone"></i></a>
+					<a href="mailto:yourname@domain.com"><i class="font-11 fa-fw far fa-envelope"></i></a>
+					<a href="#" class="close-menu"><i class="font-10 fa-fw fa fa-times"></i></a>
 				</div>
 				<div class="sidebar-separator">Tema</div>
 				<div class="menu-items menu-icons">
 					<a class="demo-color demo-red" href="#"><i class="color-red-light fa fa-dot-circle"></i>Merah</a>
-					<a class="demo-color demo-green" href="#"><i class="color-green-light fa fa-dot-circle"></i>Hijau</a>
+					<a class="demo-color demo-green" href="#"><i
+							class="color-green-light fa fa-dot-circle"></i>Hijau</a>
 					<a class="demo-color demo-blue" href="#"><i class="color-blue-light fa fa-dot-circle"></i>Biru</a>
 					<a class="demo-color demo-pink" href="#"><i class="color-pink-light fa fa-dot-circle"></i>Pink</a>
-					<a class="demo-color demo-orange" href="#"><i class="color-orange-light fa fa-dot-circle"></i>Orange</a>
-					<a class="demo-color demo-magenta" href="#"><i class="color-magenta-light fa fa-dot-circle"></i>Ungu</a>
-					<a class="demo-color demo-simple" href="#"><i class="color-gray-dark fa fa-dot-circle"></i>Minimalis</a>
+					<a class="demo-color demo-orange" href="#"><i
+							class="color-orange-light fa fa-dot-circle"></i>Orange</a>
+					<a class="demo-color demo-magenta" href="#"><i
+							class="color-magenta-light fa fa-dot-circle"></i>Ungu</a>
+					<a class="demo-color demo-simple" href="#"><i
+							class="color-gray-dark fa fa-dot-circle"></i>Minimalis</a>
+				</div>
+				<div class="sidebar-divider"></div>
+				<div class="sidebar-separator">Ikon</div>
+				<div class="menu-items menu-icons">
+					<a class="demo-icons demo-icons-on menu-item-active" href="#"><i class="fa fa-check"></i>Aktif</a>
+					<a class="demo-icons demo-icons-off" href="#"><i class="fa fa-times"></i>Non-aktif</a>
+				</div>
+				<div class="sidebar-divider"></div>
+				<div class="sidebar-separator">Sidebar</div>
+				<div class="menu-items menu-icons">
+					<a class="demo-dark menu-item-active" href="#"><i class="fa fa-moon"></i>Gelap</a>
+					<a class="demo-light" href="#"><i class="fa fa-sun"></i>Terang</a>
 				</div>
 				<div class="sidebar-divider"></div>
 				<p class="sidebar-copyright">&copy;<span class="copyright-year"></span> - Masyarakat</p>
 			</div>
 		</div>
 		<div class="page-content">
-			<div class="header-card card bg-highlight card-full">
+			<div class="header-card card card-red card-full">
 				<div class="header header-light header-static header-logo-app hide-header-card">
 					<div class="header header-static header-logo-app">
-						<a href="index.html" class="header-title font-12">MASYARAKAT</a>
+						<a href="https://masyarakat.id" class="header-title font-12">MASYARAKAT</a>
 						<a data-menu="menu-2" href="#" class="header-icon header-icon-1"><i class="fa fa-cog"></i></a>
 						<a data-menu="menu-1" href="#" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
 					</div>
@@ -77,313 +119,88 @@
 			</div>
 			<div class="content">
 				<div class="header-clear"></div>
-				<h3 class="uppercase bolder color-highlight bottom-20">Surah Al Quran</h3>
-				<p>Surah adalah pembagian yang terdapat di dalam Al Quran. Terdapat 114 surah dalam Al Quran. Masing-masing
-					surah dibagi lagi menjadi ayat. Panjang surah bervariasi, surah terpendek, yaitu Al Kausar hanya memiliki tiga
-					ayat, sedangkan surah terpanjang, yaitu Al Baqarah memiliki 286 ayat.</p>
-				<p>Surah-surah juga diklasifikasikan menjadi Makiyah dan Madaniyah, tergantung pada tempat dan waktu penurunan
-					surah tersebut. Suatu surah digolongkan sebagai Makiyah jika kebanyakan atau seluruh ayatnya diturunkan di
-					Makkah sebelum hijrahnya Nabi Muhammad, dan digolongkan sebagai madaniyah jika diturunkan di Madinah setelah
-					peristiwa hijrah. Selain Surah At-Taubah, semua surah lain diawali dengan basmalah, yang juga merupakan
-					pembatas di antara surah.</p>
-			</div>
-			<!-- pencarian -->
-			<div class="content top-50 bottom-50 search-input-container search-input-round search-input-light">
-				<h3 class="uppercase bolder color-highlight bottom-20">Daftar Surah</h3>
-				<div class="search-boxes">
-					<div class="search bottom-10">
-						<i class="fa fa-search"></i>
-						<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari Surah disini..." data-search>
+				<div class="content bottom-0 search-input-container search-input-round search-input-light">
+					<div class="search-boxes">
+						<div class="search">
+							<i class="fa fa-search"></i>
+							<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Ketik kata disini..."
+								data-search>
+							<table id="myTable">
+								<tr>
+									<th>Name</th>
+									<th>Country</th>
+								</tr>
+								<tr>
+									<td>Alfreds Futterkiste</td>
+									<td>Germany</td>
+								</tr>
+								<tr>
+									<td>Berglunds snabbkop</td>
+									<td>Sweden</td>
+								</tr>
+								<tr>
+									<td>Island Trading</td>
+									<td>UK</td>
+								</tr>
+								<tr>
+									<td>Koniglich Essen</td>
+									<td>Germany</td>
+								</tr>
+								<tr>
+									<td>Laughing Bacchus Winecellars</td>
+									<td>Canada</td>
+								</tr>
+								<tr>
+									<td>Magazzini Alimentari Riuniti</td>
+									<td>Italy</td>
+								</tr>
+								<tr>
+									<td>North/South</td>
+									<td>UK</td>
+								</tr>
+								<tr>
+									<td>Paris specialites</td>
+									<td>France</td>
+								</tr>
+							</table>
+
+							<div class="footer footer-dark">
+								<div class="footer-socials">
+									<a
+										href="https://api.netlify.com/api/v1/badges/6c0f9aec-bed1-4eef-be03-c7b622caae78/deploy-status"></a>
+								</div>
+								<p class="footer-copyright">&copy;<span class="copyright-year"></span> - Masyarakat</p>
+							</div>
+						</div>
+						<a href="#" class="back-to-top-badge back-to-top-small bg-highlight"><i
+								class="fa fa-angle-up"></i>Ke Atas</a>
 					</div>
-					<table id="myTable" class="table-borders-dark rounded-corners">
-						<tr>
-							<td><a href="#">1. Al Fatihah</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">2. Al Baqarah</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">3. Ali Imran</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">4. An Nisa</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">5. Al Maidah</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">6. Al An'am</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">7. Al A'raf</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">8. Al Anfal</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">9. At Taubah</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">10. Yunus</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">11. Hud</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">12. Yusuf</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">13. Ar Ra'd</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">14. Ibrahim</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">15. Al Hijr</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">16. An Nahl</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">17. Al Isra'</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">18. Al Kahf</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">19. Maryam</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">20. Taha</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">21. Al Anbiya</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">22. Al Hajj</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">23. Al Mukminun</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">24. An Nur</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">25. Al Furqan</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">26. Asy Syu'ara</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">27. An Naml</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">28. Al Qasas</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">29. Al Ankabut</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">30. Ar Rum</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">31. Luqman</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">32. As Sajdah</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">33. Al Ahzab</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">34. Saba</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">35. Fatir</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">36. Yasin</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">37. As Saffat</a></td>
-						<tr>
-							<td><a href="#">38. Sad</a></td>
-						<tr>
-							<td><a href="#">39. Az Zumar</a></td>
-						<tr>
-							<td><a href="#">40. Ghafir</a></td>
-						<tr>
-							<td><a href="#">41. Fussilat</a></td>
-						<tr>
-							<td><a href="#">42. Asy Syura</a></td>
-						<tr>
-							<td><a href="#">43. Az Zukhruf</a></td>
-						<tr>
-							<td><a href="#">44. Ad Dukhan</a></td>
-						<tr>
-							<td><a href="#">45. Al Jasiyah</a></td>
-						<tr>
-							<td><a href="#">46. Al Ahqaf</a></td>
-						<tr>
-							<td><a href="#">47. Muhammad</a></td>
-						<tr>
-							<td><a href="#">48. Al Fath</a></td>
-						<tr>
-							<td><a href="#">49. Al Hujurat</a></td>
-						<tr>
-							<td><a href="#">50. Qaf</a></td>
-						<tr>
-							<td><a href="#">51. Az Zariyat</a></td>
-						<tr>
-							<td><a href="#">52. At Tur</a></td>
-						<tr>
-							<td><a href="#">53. An Najm</a></td>
-						<tr>
-							<td><a href="#">54. Al Qamar</a></td>
-						<tr>
-							<td><a href="#">55. Ar Rahman</a></td>
-						<tr>
-							<td><a href="#">56. Al Waqiah</a></td>
-						<tr>
-							<td><a href="#">57. Al Hadid</a></td>
-						<tr>
-							<td><a href="#">58. Al Mujadalah</a></td>
-						<tr>
-							<td><a href="#">59. Al Hasyr</a></td>
-						<tr>
-							<td><a href="#">60. Al Mumtahanah</a></td>
-						<tr>
-							<td><a href="#">61. As Saff</a></td>
-						<tr>
-							<td><a href="#">62. Al Jumuah</a></td>
-						<tr>
-							<td><a href="#">63. Al Munafiqun</a></td>
-						<tr>
-							<td><a href="#">64. At Tagabun</a></td>
-						<tr>
-							<td><a href="#">65. At Talaq</a></td>
-						<tr>
-							<td><a href="#">66. At Tahrim</a></td>
-						<tr>
-							<td><a href="#">67. Al Mulk</a></td>
-						<tr>
-							<td><a href="#">68. Al Qalam</a></td>
-						<tr>
-							<td><a href="#">69. Al Haqqah</a></td>
-						<tr>
-							<td><a href="#">70. Al Ma'arij</a></td>
-						<tr>
-							<td><a href="#">71. Nuh</a></td>
-						<tr>
-							<td><a href="#">72. Al Jinn</a></td>
-						<tr>
-							<td><a href="#">73. Al Muzzammil</a></td>
-						<tr>
-							<td><a href="#">74. Al Muddassir</a></td>
-						<tr>
-							<td><a href="#">75. Al Qiyamah</a></td>
-						<tr>
-							<td><a href="#">76. Al Insan</a></td>
-						<tr>
-							<td><a href="#">77. Al Mursalat</a></td>
-						<tr>
-							<td><a href="#">78. An Naba</a></td>
-						<tr>
-							<td><a href="#">79. An Naziat</a></td>
-						<tr>
-							<td><a href="#">80. Abasa</a></td>
-						<tr>
-							<td><a href="#">81. At Takwir</a></td>
-						<tr>
-							<td><a href="#">82. Al Infitar</a></td>
-						<tr>
-							<td><a href="#">83. Al Mutaffifin</a></td>
-						<tr>
-							<td><a href="#">84. Al Insyiqaq</a></td>
-						<tr>
-							<td><a href="#">85. Al Buruj</a></td>
-						<tr>
-							<td><a href="#">86. At Tariq</a></td>
-						<tr>
-							<td><a href="#">87. Al A'la</a></td>
-						<tr>
-							<td><a href="#">88. Al-Gasyiyah</a></td>
-						<tr>
-							<td><a href="#">89. Al Fajr</a></td>
-						<tr>
-							<td><a href="#">90. Al Balad</a></td>
-						<tr>
-							<td><a href="#">91. Asy Syams</a></td>
-						<tr>
-							<td><a href="#">92. Al Lail</a></td>
-						<tr>
-							<td><a href="#">93. Ad Dhuha</a></td>
-						<tr>
-							<td><a href="#">94. Al Insyirah</a></td>
-						<tr>
-							<td><a href="#">95. At Tin</a></td>
-						<tr>
-							<td><a href="#">96. Al Alaq</a></td>
-						<tr>
-							<td><a href="#">97. Al Qadr</a></td>
-						<tr>
-							<td><a href="#">98. Al Bayyinah</a></td>
-						<tr>
-							<td><a href="#">99. Az Zalzalah</a></td>
-						<tr>
-							<td><a href="#">100. Al Adiyat</a></td>
-						<tr>
-							<td><a href="#">101. Al Qariah</a></td>
-						<tr>
-							<td><a href="#">102. At Takasur</a></td>
-						<tr>
-							<td><a href="#">103. Al Asr</a></td>
-						<tr>
-							<td><a href="#">104. Al Humazah</a></td>
-						<tr>
-							<td><a href="#">105. Al Fil</a></td>
-						<tr>
-							<td><a href="#">106. Quraisy</a></td>
-						<tr>
-							<td><a href="#">107. Al Ma'un</a></td>
-						<tr>
-							<td><a href="#">108. Al Kausar</a></td>
-						<tr>
-							<td><a href="#">109. Al Kafirun</a></td>
-						<tr>
-							<td><a href="#">110. An Nasr</a></td>
-						<tr>
-							<td><a href="#">111. Al Lahab</a></td>
-						<tr>
-							<td><a href="#">112. Al Ikhlas</a></td>
-						<tr>
-							<td><a href="#">113. Al Falaq</a></td>
-						<tr>
-							<td><a href="#">114. An Nas</a></td>
-					</table>
-					<!-- /pencarian -->
+
+					<script>
+						function myFunction() {
+							var input, filter, table, tr, td, i, txtValue;
+							input = document.getElementById("myInput");
+							filter = input.value.toUpperCase();
+							table = document.getElementById("myTable");
+							tr = table.getElementsByTagName("tr");
+							for (i = 0; i < tr.length; i++) {
+								td = tr[i].getElementsByTagName("td")[0];
+								if (td) {
+									txtValue = td.textContent || td.innerText;
+									if (txtValue.toUpperCase().indexOf(filter) > -1) {
+										tr[i].style.display = "";
+									} else {
+										tr[i].style.display = "none";
+									}
+								}
+							}
+						}
+					</script>
+
+					<script type="text/javascript" src="scripts/jquery.js"></script>
+					<script type="text/javascript" src="scripts/plugins.js"></script>
+					<script type="text/javascript" src="scripts/custom.js"></script>
 				</div>
-			</div>
-			<div class="footer footer-dark">
-				<p align="center" class="bottom-30">Masyarakat <i class="fas fa-heart color-highlight"></i> Indonesia
-				</p>
-			</div>
-			<a href="#" class="back-to-top-badge back-to-top-small bg-highlight"><i class="fa fa-angle-up"></i>Ke
-				Atas</a>
-		</div>
-		<script>
-			$(document).ready(function () {
-				$("#myInput").on("keyup", function () {
-					var value = $(this).val().toLowerCase();
-					$("#myTable tr").filter(function () {
-						$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-					});
-				});
-			});
-		</script>
-		<script type="text/javascript" src="scripts/jquery.js"></script>
-		<script type="text/javascript" src="scripts/plugins.js"></script>
-		<script type="text/javascript" src="scripts/custom.js"></script>
 </body>
 <!-- /body -->
 

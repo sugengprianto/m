@@ -84,6 +84,20 @@
 	background: #70dada;
 }
 
+br {
+	display: block;
+	content: "";
+	margin: 10px 0;
+	border-bottom: 1px solid #E5E4E2;
+}
+@-moz-document url-prefix() {
+	br {
+		display: block;
+		margin: 20px 0; 
+	}
+}
+
+
 /*Style.CSS*/
 /* All logos and logo sizes are edited in this CSS*/
 

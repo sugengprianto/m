@@ -258,20 +258,20 @@ sup{top: -15px;} sub{bottom: 0px;}
 .highlight-red .bg-highlight.button{border:solid 2px #d8334a;}
 .highlight-red .menu-items .bg-highlight{background-color:#d4354b!important;}
 
-.highlight-green .color-highlight{color:#8CC152!important;}
-.highlight-green .bg-highlight{background-color:#8CC152!important; color:#FFFFFF;}
-.highlight-green .bg-highlight.button{border:solid 2px #8CC152;}
-.highlight-green .menu-items .bg-highlight{background-color:#8CC152!important;}
+.highlight-green .color-highlight{color:#009d00!important;}
+.highlight-green .bg-highlight{background-color:#009d00!important; color:#FFFFFF;}
+.highlight-green .bg-highlight.button{border:solid 2px #009d00;}
+.highlight-green .menu-items .bg-highlight{background-color:#009d00!important;}
 
-.highlight-blue .color-highlight{color:#5D9CEC!important;}
-.highlight-blue .bg-highlight{background-color:#5D9CEC!important; color:#FFFFFF;}
-.highlight-blue .bg-highlight.button{border:solid 2px #5D9CEC;}
-.highlight-blue .menu-items .bg-highlight{background-color:#5D9CEC!important;}
+.highlight-blue .color-highlight{color:#0083b0!important;}
+.highlight-blue .bg-highlight{background-color:#0083b0!important; color:#FFFFFF;}
+.highlight-blue .bg-highlight.button{border:solid 2px #0083b0;}
+.highlight-blue .menu-items .bg-highlight{background-color:#0083b0!important;}
 
-.highlight-pink .color-highlight{color:#fa6a8e!important;}
-.highlight-pink .bg-highlight{background-color:#fa6a8e!important; color:#FFFFFF;}
-.highlight-pink .bg-highlight.button{border:solid 2px #fa6a8e;}
-.highlight-pink .menu-items .bg-highlight{background-color:#fa6a8e!important;}
+.highlight-pink .color-highlight{color:#35db92!important;}
+.highlight-pink .bg-highlight{background-color:#35db92!important; color:#FFFFFF;}
+.highlight-pink .bg-highlight.button{border:solid 2px #35db92;}
+.highlight-pink .menu-items .bg-highlight{background-color:#35db92!important;}
 
 .highlight-orange .color-highlight{color:#fc6e51!important;}
 .highlight-orange .bg-highlight{background-color:#fc6e51!important; color:#FFFFFF;}

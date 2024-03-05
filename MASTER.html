@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="id">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>Selamat datang di Masyarakat</title>
+	<link rel="icon" type="image/png" href="masyarakat.png">
+	<meta name="description"
+		content="Mari berbuat baik dengan berbagi kepada saudara-saudara kita yang sedang membutuhkan">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="framework.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+	<script src="jquery.js"></script>
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+		rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
+	<script src="tablesearch.js"></script>
+</head>
+
+<body>
+
+	<div id="page-transitions" class="page-build highlight-red">
+
+		<div class="header header-light header-static header-logo-left hide-header-card">
+			<a href="index.html" class="header-title">MASYARAKAT</a>
+			<a data-menu="menu-1" href="#" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+		</div>
+
+		<div id="menu-1" class="menu-sidebar menu-dark menu-sidebar-right menu-sidebar-reveal">
+			<div class="menu-scroll">
+				<div class="sidebar-icons">
+					<a href="https://www.facebook.com/enabled.labs"><i class="font-10 fa-fw fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com/iEnabled"><i class="font-10 fa-fw fab fa-twitter"></i></a>
+					<a href="tel:+1 234 567 890"><i class="font-10 fa-fw fa fa-phone"></i></a>
+					<a href="mailto:yourname@domain.com"><i class="font-11 fa-fw far fa-envelope"></i></a>
+					<a href="#" class="close-menu"><i class="font-10 fa-fw fa fa-times"></i></a>
+				</div>
+				<div class="sidebar-separator font-12">MENU</div>
+				<div class="menu-items menu-icons">
+					<a href="index.html" class="menu-item-active"><i class="fa fa-home"></i>Beranda</a>
+					<a href="#"><i class="fas fa-envelope"></i>Kebijakan Privasi</a>
+				</div>
+				<div class="sidebar-divider"></div>
+				<div class="sidebar-separator font-12">TEMA</div>
+				<div class="menu-items menu-icons">
+					<a class="demo-color demo-red menu-item-active" href="#"><i class="color-red-light fa fa-dot-circle"></i>Red</a>
+					<a class="demo-color demo-green" href="#"><i class="color-green-light fa fa-dot-circle"></i>Green</a>
+					<a class="demo-color demo-blue" href="#"><i class="color-blue-light fa fa-dot-circle"></i>Blue</a>
+					<a class="demo-color demo-pink" href="#"><i class="color-pink-light fa fa-dot-circle"></i>Pink</a>
+					<a class="demo-color demo-orange" href="#"><i class="color-orange-light fa fa-dot-circle"></i>Orange</a>
+					<a class="demo-color demo-magenta" href="#"><i class="color-magenta-light fa fa-dot-circle"></i>Magenta</a>
+					<a class="demo-color demo-simple" href="#"><i class="color-gray-dark fa fa-dot-circle"></i>Minimalist</a>
+				</div>	
+				<p class="sidebar-copyright"><span class="copyright-year"></span> - Masyarakat</p>
+			</div>
+		</div>
+
+		<div class="page-content">
+			<div class="header-card card bg-highlight card-full">
+				<div class="header header-static header-logo-left">
+					<a href="index.html" class="header-title font-14">Masyarakat</a>
+					<a data-menu="menu-1" href="#" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+				</div>
+				<div class="header-clear"></div>
+				<h1 class="color-white center-text bolder top-10">Assalamu 'Alaikum</h1>
+				<p class="center-text color-white opacity-80 boxed-text-large">
+					Selamat datang di Masyarakat<br>https://masyarakat.id
+				</p>
+				<!-- a href="page-about.html" class="button button-white button-center-large button-s top-30 button-round ultrabold uppercase">Why Enabled Products</a -->
+			</div>
+			<div class="content">
+				<div class="header-clear"></div>
+				<div class="input-simple-2 has-icon input-green bottom-15"><i class="fa fa-search"></i><input type="text"
+						onkeyup="searchTable(this.value, 'list', 0)" placeholder="Pencarian Surah" title="Pencarian Surah">
+				</div>
+
+				<div class="input-simple-2 has-icon input-green bottom-20"><i class="fa fa-search"></i><input type="text"
+						onkeyup="searchTable(this.value, 'list', 1)" placeholder="Pencarian Ayat" title="Pencarian Ayat"></div>
+
+				<table id="list" class="table table-hover">
+					<thead>
+						<tr>
+							<th scope="col">Surah</th>
+							<th scope="col">Ayat</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>1. Al Fatihah</td>
+						<td>1. Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.</td>
+					</tr>
+					<tr>
+						<td>1. Al Fatihah</td>
+						<td>2. Segala puji bagi Allah, Tuhan seluruh alam.</td>
+					</tr>
+					<tr>
+						<td>1. Al Fatihah</td>
+						<td>3. Yang Maha Pengasih, Maha Penyayang.</td>
+					</tr>
+				</table>
+
+				<script language="JavaScript">
+					var count = $('#list tr').length;
+				</script>
+				
+			</div>
+
+			<div class="footer footer-dark">
+				<a href="#" class="footer-logo"></a>
+				<strong>Masyarakat <i class="fas fa-heart color-red-light"></i> Indonesia</strong>
+				<p class="footer-copyright">&copy;<span class="copyright-year"></span> - Masyarakat</p>
+			</div>
+		</div>
+		<a href="#" class="back-to-top-badge back-to-top-small bg-highlight"><i class="fa fa-angle-up"></i>Back to
+			Top</a>
+	</div>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="plugins.js"></script>
+	<script type="text/javascript" src="custom.js"></script>
+
+</body>
+
+</html>
